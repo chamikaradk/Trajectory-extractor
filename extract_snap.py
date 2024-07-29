@@ -4,7 +4,7 @@ import numpy as np
 
 topology = 'F4_bulk.gro'
 trajectory = 'F4_bulk.xtc'
-interval_ps = 20
+interval_ps = 20 # time interval has to be in ps
 
 print(f"Time interval selected : {interval_ps} ps")
 def write_to_file(universe, frame, filename, supercell):
