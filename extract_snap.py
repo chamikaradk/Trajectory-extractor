@@ -34,6 +34,6 @@ def extract_coords(topology, trajectory, interval_ps):
 
 #box coordinates are stored in this array
 box_coordinates = extract_coords(topology, trajectory, interval_ps)
-box_coordinates[:,:3] = box_coordinates[:,:3]/10
+box_coordinates[:,:3] = box_coordinates[:,:3]/10 #obtain a,b,c in nm units
 
 print(box_coordinates)
